@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-peach-light: #FFD3AC;
+  --color-peach-pink: #FFB5AB;
+  --color-peach-warm: #E39A7B;
+  --color-peach-gold: #DBB06B;
+
+  --color-wood-brown: #713600;
+  --color-wood-accent: #C05800;
+  --color-wood-cream: #FDFBD4;
+  --color-wood-dark: #38240D;
+}
+
+/* Custom scrollbar and subtle glowing luxury classes */
+@layer utilities {
+  .gold-glow {
+    box-shadow: 0 4px 20px -2px rgba(227, 154, 123, 0.15);
+  }
+  .gold-glow-hover:hover {
+    box-shadow: 0 10px 25px -5px rgba(227, 154, 123, 0.3);
+  }
+}
+
+/* Smooth page transitions and custom styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom style for beautiful Urdu typography layout */
+.urdu-text {
+  font-family: 'Playfair Display', 'Noto Nastaliq Urdu', serif;
+  line-height: 1.8;
+}
