@@ -9,14 +9,14 @@ import Footer from './components/Footer';
 import { Product, Inquiry } from './types';
 
 // Import our beautiful custom-generated high-quality Chinioti furniture photos
-import heroImage from './assets/images/chinioti_carved_bed_1784559807771.jpg';
+import heroImage from './assets/images/chinioti_furniture_hero_1784559738859.jpg';
 import sofaImage from './assets/images/chinioti_carved_sofa_1784559762922.jpg';
 import diningImage from './assets/images/chinioti_dining_table_1784559784870.jpg';
 import bedImage from './assets/images/chinioti_carved_bed_1784559807771.jpg';
 import roomSetImage from './assets/images/chinioti_room_set_1784617930498.jpg';
 
 export default function App() {
-  const [lang, setLang] = useState<'en' | 'ur'>('ur'); // Default to Urdu for authentic Pakistani showroom appeal!
+  const [lang, setLang] = useState<'en' | 'ur'>('en'); // Default to English as requested
   const [activeSection, setActiveSection] = useState('home');
   const [selectedProductForQuote, setSelectedProductForQuote] = useState<Product | null>(null);
   const [inquiriesList, setInquiriesList] = useState<Inquiry[]>([]);

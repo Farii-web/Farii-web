@@ -26,6 +26,26 @@
   }
 }
 
+/* Continuous Infinite Marquee Ticker Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Smooth page transitions and custom styles */
 html {
   scroll-behavior: smooth;
@@ -36,3 +56,16 @@ html {
   font-family: 'Playfair Display', 'Noto Nastaliq Urdu', serif;
   line-height: 1.8;
 }
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.08) translate(-1%, -1%);
+  }
+  100% {
+    transform: scale(1.12) translate(1%, 0.5%);
+  }
+}
+

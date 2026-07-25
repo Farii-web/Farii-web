@@ -22,7 +22,7 @@ export default function Footer({ lang }: FooterProps) {
         <div className="md:col-span-5 space-y-4">
           <div className="flex flex-col cursor-pointer" onClick={handleScrollToTop}>
             <span className="font-serif text-2xl font-bold tracking-tight text-white hover:text-wood-accent transition-colors">
-              Al-Haram <span className="text-wood-accent italic font-normal font-serif">Furniture</span>
+              Al Haram <span className="text-wood-accent italic font-normal font-serif">Furniture</span>
             </span>
             <span className="text-[10px] font-mono tracking-[0.25em] text-wood-accent uppercase mt-0.5">
               CHINIOT MASTERPIECES
@@ -64,7 +64,7 @@ export default function Footer({ lang }: FooterProps) {
       <div className="bg-wood-dark/95 py-6 border-t border-wood-accent/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-wood-cream/50 gap-4">
           <div className="flex items-center gap-1.5 flex-wrap justify-center">
-            <span>© {currentYear} Al-Haram Furniture Chiniot. All Rights Reserved.</span>
+            <span>© {currentYear} Al Haram Furniture Chiniot. All Rights Reserved.</span>
             <span className="hidden sm:inline text-wood-cream/20">|</span>
             <span className="flex items-center gap-1 text-wood-cream/70">
               Made with <Heart className="h-3 w-3 text-rose-500 fill-rose-500" /> in Chiniot, Pakistan

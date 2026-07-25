@@ -118,7 +118,7 @@ export default function QuoteBuilder({ lang, selectedProductFromGallery, onInqui
   // Pre-fill WhatsApp message link
   const whatsappLink = React.useMemo(() => {
     if (!submittedInquiry) return '';
-    const message = `Assalam-o-Alaikum Al-Haram Furniture Chiniot!
+    const message = `Assalam-o-Alaikum Al Haram Furniture Chiniot!
 
 *New Custom Wood Furniture Inquiry*
 ----------------------------------
@@ -421,7 +421,7 @@ Please contact me back to confirm Wood Seasoning and design process. Shukriya!`;
                 </h3>
                 <p className="text-wood-dark/80 text-sm leading-relaxed">
                   {lang === 'en' 
-                    ? 'Your inquiry is saved in Al-Haram Showroom Registry. Now click below to send this directly to our carving master on WhatsApp for final booking!'
+                    ? 'Your inquiry is saved in Al Haram Showroom Registry. Now click below to send this directly to our carving master on WhatsApp for final booking!'
                     : 'آپ کا ڈیزائن ہمارے چنیوٹ ریکارڈ میں درج ہو چکا ہے۔ فائنل آرڈر یا مزید تفصیلات کے لیے نیچے واٹس ایپ بٹن دبا کر ہم سے رابطہ کریں۔'}
                 </p>
               </div>

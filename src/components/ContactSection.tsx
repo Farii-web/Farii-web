@@ -37,7 +37,7 @@ export default function ContactSection({ lang, inquiriesList, onDeleteInquiry }:
             <div className="bg-white border border-wood-accent/20 rounded-2xl p-6 sm:p-8 space-y-6 shadow-md">
               <h3 className="font-serif text-lg font-bold text-wood-dark flex items-center gap-1.5 border-b border-wood-accent/15 pb-2">
                 <Sparkles className="h-4.5 w-4.5 text-wood-accent" />
-                {lang === 'en' ? 'Al-Haram Showroom Address' : 'الحرم شوروم رابطہ معلومات'}
+                {lang === 'en' ? 'Al Haram Showroom Address' : 'الحرم شوروم رابطہ معلومات'}
               </h3>
 
               {/* Detail Blocks */}
@@ -49,7 +49,7 @@ export default function ContactSection({ lang, inquiriesList, onDeleteInquiry }:
                     <strong className="text-wood-dark block">{lang === 'en' ? 'Location Address:' : 'شوروم پتا:'}</strong>
                     <span className="text-wood-dark/80">
                       {lang === 'en'
-                        ? 'Al-Haram Furniture, Shaheed Chowk near Sabz Mehal, Chiniot, Punjab, Pakistan.'
+                        ? 'Al Haram Furniture, Shaheed Chowk near Sabz Mehal, Chiniot, Punjab, Pakistan.'
                         : 'الحرم فرنیچر، شہید چوک، نزد سبز محل، چنیوٹ، پنجاب، پاکستان۔'}
                     </span>
                   </div>

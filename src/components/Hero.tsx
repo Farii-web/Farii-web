@@ -36,7 +36,7 @@ export default function Hero({ lang, heroImage, bedImage, onActionClick }: HeroP
                     Royal Wood
                   </h1>
                   <p className="text-wood-dark/80 text-sm sm:text-base leading-relaxed max-w-xl">
-                    Al-Haram Furniture Chiniot brings you the luxury of legendary Mughal wood craftsmanship. Each piece is meticulously hand-sculpted in 100% seasoned pure Sheesham (Rosewood) to stand as an heirloom for generations.
+                    Al Haram Furniture Chiniot brings you the luxury of legendary Mughal wood craftsmanship. Each piece is meticulously hand-sculpted in 100% seasoned pure Sheesham (Rosewood) to stand as an heirloom for generations.
                   </p>
                 </div>
               ) : (
@@ -111,13 +111,7 @@ export default function Hero({ lang, heroImage, bedImage, onActionClick }: HeroP
                 className="w-full h-full object-cover transform hover:scale-[1.01] transition-transform duration-700"
               />
               
-              {/* Overlay with subtle description flag */}
-              <div className="absolute bottom-4 left-4 bg-wood-cream/95 backdrop-blur-xs text-wood-dark px-3.5 py-2 rounded-md shadow-lg border border-wood-accent/25 hidden sm:flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-amber-500 animate-pulse"></div>
-                <div className="text-[10px] font-mono uppercase tracking-wider text-wood-dark/90 font-bold">
-                  {lang === 'en' ? 'Masterpiece Bed Set | Chiniot Showroom' : 'شاہکار شیشم بیڈ سیٹ | چنیوٹ شو روم'}
-                </div>
-              </div>
+              {/* Clean hero photo container */}
             </div>
 
             {/* Subtle decorative stamp */}

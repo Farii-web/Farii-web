@@ -1,13 +1,18 @@
 import React, { useState, useMemo } from 'react';
 import { Search, SlidersHorizontal, Eye, HelpCircle, Heart, PlusCircle, Check, X, Shield, Landmark } from 'lucide-react';
 import { Product } from '../types';
-import royalDecoBedImage from '../assets/images/royal_deco_bed_1784613608854.jpg';
+import longChairsShowroomImage from '../assets/images/alharam_chairs_clean_1784950098324.jpg';
 import safeAlmariImage from '../assets/images/chinioti_safe_almari_1784739769587.jpg';
+import royalWardrobeImage from '../assets/images/chinioti_royal_wardrobe_1784906332729.jpg';
+import roomDividerImage from '../assets/images/chinioti_room_divider_1784906741385.jpg';
 import consoleMirrorImage from '../assets/images/chinioti_console_mirror_1784739788572.jpg';
 import jhulaImage from '../assets/images/chinioti_royal_jhula_1784740393068.jpg';
 import dressingImage from '../assets/images/chinioti_dressing_table_1784740414730.jpg';
 import cornerCabinetImage from '../assets/images/chinioti_corner_cabinet_1784740434049.jpg';
 import deewanImage from '../assets/images/chinioti_royal_deewan_1784740450170.jpg';
+import showcaseWorkshopImage from '../assets/images/chinioti_showcase_workshop_1784950770746.jpg';
+import goldenBedsetImage from '../assets/images/no_sheet_tufted_bed_1784952087728.jpg';
+import beforeAfterCraftImage from '../assets/images/chiniot_craft_nosheet_split_1784952563441.jpg';
 
 interface CatalogProps {
   lang: 'en' | 'ur';
@@ -28,6 +33,66 @@ export default function Catalog({ lang, onSelectProductForQuote, bedImage, sofaI
   // Static list of premium Chinioti products
   const products: Product[] = useMemo(() => [
     {
+      id: "prod-craft-transformation",
+      name: "Chinioti Masterpiece: Raw Hand Carving to Royal Finished Furniture",
+      nameUrdu: "چنیوٹی شاہکار: خام تراش سے مکمل تیار اینٹیک فرنیچر تک",
+      category: "masterpieces",
+      description: "An authentic split comparison image showcasing the Chinioti craftsmanship journey. Left shows our skilled artisan hand-carving raw Sheesham wood in the workshop; Right shows the completed gold-leaf polished tufted bed set.",
+      descriptionUrdu: "ایک ہی تصویر میں دیکھئے: بائیں طرف ہمارے ماہر کاریگر کو ورکشاپ میں خام لکڑی پر چھینی سے نقش کاری کرتے ہوئے اور دائیں طرف وہی مکمل تیار اور اینٹیک پالش شدہ شاندار شاہکار۔",
+      priceEstimate: 245000,
+      image: beforeAfterCraftImage,
+      woodType: "100% Solid Seasoned Sheesham Wood (Tali)",
+      carvingStyle: "Manual Hand Chisel Naqashi & Imperial Polish",
+      polishType: "Raw Wood to High-Gloss Antique Gold Leaf Polish",
+      features: ["Side-by-Side Craftsmanship Transformation View", "Authentic Pakistani Artisan Hand-Carving Process", "100% Solid Seasoned Sheesham Wood Frame", "Custom Polish & Upholstery Available"],
+      featuresUrdu: ["ایک ہی فریم میں پہلے اور بعد کا مکمل منظر", "پاکستانی ماہر کاریگر کا روایتی ہاتھ کا کام", "خالص اور پکی سیزنڈ شیشم کی لکڑی", "حسب منشا پالش اور کپڑے کی سہولت"]
+    },
+    {
+      id: "prod-golden-royal-bed",
+      name: "Imperial Golden Antique Crown Chinioti Royal Bed Set",
+      nameUrdu: "امپیریل گولڈن اینٹیک تاج شاہی چنیوٹی بیڈ سیٹ",
+      category: "bedroom",
+      description: "A breathtaking royal Chinioti king bed set featuring intricate heavy crown (Taj) carving in antique gold leaf finish with off-white diamond-tufted velvet upholstery, 2 matching side tables, and front bench.",
+      descriptionUrdu: "ایک شاندار اینٹیک گولڈن ورک والا شاہی چنیوٹی بیڈ سیٹ جس پر بھاری ہاتھ کی تاج کاری اور کریم مخمل کشننگ کی گئی ہے۔ اس سیٹ میں 2 عدد سائیڈ ٹیبلز اور سامنے والی بینچ شامل ہیں۔",
+      priceEstimate: 245000,
+      image: goldenBedsetImage,
+      woodType: "100% Solid Seasoned Sheesham Wood (Tali)",
+      carvingStyle: "Heavy Imperial Taj (Crown) & Acanthus Scrollwork",
+      polishType: "Antique Royal Gold Leaf & Rosewood Polish",
+      features: ["Heavy Hand-Carved Royal Crown Headboard & Footboard", "Premium Off-White Diamond Tufted Velvet Cushioning", "Includes 2 Carved Golden Side Tables & Front Bench", "100% Pure Seasoned Sheesham Solid Wood Frame"],
+      featuresUrdu: ["بھاری شاہی تاج کاری والا ہیڈ بورڈ اور فٹ بورڈ", "پریمیئم کریم کلر ڈائمنڈ ٹفٹڈ مخمل کشننگ", "شامل ہیں 2 عدد گولڈ سائیڈ ٹیبلز اور فرنچ بینچ", "خالص اور مضبوط شیشم کا فریم"]
+    },
+    {
+      id: "prod-royal-showcase",
+      name: "3-Door Arched Imperial Chinioti Glass Showcase Cabinet",
+      nameUrdu: "3 دروں والا محرابی شاہی چنیوٹی ڈسپلے شوکیس",
+      category: "storage",
+      description: "An elegant 3-door arched Chinioti royal glass display showcase cabinet. Hand-crafted in pure solid Sheesham wood with deep Mughal arch carving, clean clear glass shelves, and brass hardware.",
+      descriptionUrdu: "3 دروازوں والا محرابی شاہی چنیوٹی ڈسپلے شوکیس۔ خالص کالی شیشم کی لکڑی، ہاتھ کی مغلائی محرابی تاج کاری، شفاف شیشے کی طاقیں اور عالي شان پیتل کے ہینڈلز۔",
+      priceEstimate: 165000,
+      image: showcaseWorkshopImage,
+      woodType: "100% Seasoned Sheesham Wood (Tali)",
+      carvingStyle: "Mughal Imperial Arch (Mehrab) & Floral Relief",
+      polishType: "High-Gloss Antique Mahogany Rosewood Polish",
+      features: ["Traditional 3-Door Arched Glass Display Design", "Clear glass shelves & full view display sides", "Hand-carved solid Sheesham Mehrab arch & floral trim", "Solid brass lock mechanisms & authentic handles"],
+      featuresUrdu: ["روایتی 3 دروں والا محرابی شیشہ شوکیس", "شفاف شیشے کے شیلف اور فل ویو سائیڈز", "خالص شیشم کا ہاتھ سے تراشیدہ مغلائی محراب", "پیتل کے چمکدار ہینڈلز اور لاک"]
+    },
+    {
+      id: "prod-wardrobe-royal",
+      name: "Grand Imperial Chinioti 4-Door Royal Wooden Wardrobe",
+      nameUrdu: "گرینڈ امپیریل چنیوٹی 4 در شاہی الماری",
+      category: "storage",
+      description: "A monumental 4-door royal wooden wardrobe crafted from pure seasoned dark Sheesham rosewood. Features grand hand-carved Mughal crown (Taj) top crests, ornate floral panel carvings, brass locks, inner secret drawers, and clothes hanging rods.",
+      descriptionUrdu: "خالص سیزن شدہ کالی شیشم کی لکڑی سے تیار کردہ 4 دروں والی شاہی الماری۔ اس پر ہاتھ سے تراشیدہ دلکش مغلائی تاج، پھولدار کندہ کاری، پیتل کے شاہی ہینڈل، اور اندرونی خفیہ درازیں موجود ہیں۔",
+      priceEstimate: 215000,
+      image: royalWardrobeImage,
+      woodType: "100% Seasoned Sheesham Heartwood",
+      carvingStyle: "Mughal Imperial Crown (Taj) & Floral Relief",
+      polishType: "High-Gloss Natural Dark Rosewood Polish",
+      features: ["4 Massive Hand-Carved Sheesham Doors", "Top ornate Mughal Taj (Crown) carving", "Built-in velvet jewelry & secret locker drawers", "Heavy solid brass hinges, handles & locks"],
+      featuresUrdu: ["4 بھاری منقش شیشم کے دروازے", "اوپری شاہی مغلائی تاج کی کندہ کاری", "خفیہ مخملی زیورات اور والٹ درازیں", "پیتل کے پائیدار شاہی قبضے اور ہینڈلز"]
+    },
+    {
       id: "prod-100",
       name: "Grand Royal Mughal Shadi Complete Room Set",
       nameUrdu: "گرینڈ شاہی مغل شادی مکمل بیڈ روم سیٹ",
@@ -44,33 +109,18 @@ export default function Catalog({ lang, onSelectProductForQuote, bedImage, sofaI
     },
     {
       id: "prod-1",
-      name: "Sovereign Shahan-e-Mughlia Bed Set",
-      nameUrdu: "تاجِ مغل شاہی بیڈ سیٹ",
-      category: "bedroom",
-      description: "A majestic king-size bed featuring a grand high-headboard with a magnificent hand-carved royal crown (Taj). Partially upholstered in white tufted velvet and crafted in premium seasoned Sheesham wood.",
-      descriptionUrdu: "ایک شاندار بادشاہی کنگ سائز بیڈ جس پر ہاتھ سے بنے دیدہ زیب شاہی تاج کی نقش و نگار موجود ہیں۔ اس کا ہیڈ بورڈ قیمتی سفید مخمل کپڑے اور سیزن شدہ خالص شیشم سے تیار کیا گیا ہے۔",
-      priceEstimate: 185000,
-      image: bedImage,
-      woodType: "Pure Seasoned Sheesham (Tali)",
-      carvingStyle: "Mughal Royal Taj Carving (3D Deep)",
-      polishType: "Glossy Walnut Polish with Gold Highlights",
-      features: ["15-Year Termite Warranty", "Kiln Dry Seasoned Wood", "High headboard (6.5 feet)", "Free Lahore/Sargodha Road installation"],
-      featuresUrdu: ["15 سال دیمک سے بچاؤ کی وارنٹی", "بھٹی میں خشک کی گئی شیشم لکڑی", "بلند ہیڈ بورڈ (6.5 فٹ)", "فری انسٹالیشن سہولت"]
-    },
-    {
-      id: "prod-15",
-      name: "Victoria Royal Deco Bed Set",
-      nameUrdu: "وکٹوریہ سفید شاہی بیڈ سیٹ",
-      category: "bedroom",
-      description: "An exquisite royal bed featuring majestic, deep hand-carvings in high-grade pearl white deco finish with elegant antique gold accents. Includes a high-back headboard upholstered in premium tufted ivory velvet.",
-      descriptionUrdu: "ایک نہایت شاندار سفید شاہی بیڈ سیٹ جس پر گہرے اور دلکش نقوش بنے ہیں۔ اس پر نفیس سفید اور ہلکے سنہری ڈیکو پینٹ کا خوبصورت کام ہے، اور ہیڈ بورڈ بہترین سفید ٹفٹڈ مخمل سے مزین ہے۔",
-      priceEstimate: 275000,
-      image: royalDecoBedImage,
-      woodType: "Premium Seasoned Sheesham & Ashwood",
-      carvingStyle: "Victorian Baroque Royal Carving",
-      polishType: "Pearl-White High-Resist Deco Paint with Gold Highlights",
-      features: ["Grand high-back velvet tufted headboard", "Two hand-carved matching bedside nightstands", "Premium high-gloss deco finish", "Built from heaviest dry seasoned timber"],
-      featuresUrdu: ["شاندار بلند پشت والا مخملی ہیڈ بورڈ", "دو عدد ہاتھ سے بنے بیڈ سائیڈ نائٹ سٹینڈز", "دیرپا پائیدار اور چمکدار ڈیکو پینٹ پالش", "خالص اور پکی موٹی سیزن شدہ لکڑی"]
+      name: "Chinioti Royal High-Back Long Chairs",
+      nameUrdu: "چنیوٹی لمبی پشت والی شاہی کرسیاں",
+      category: "living",
+      description: "Grand high-back hand-carved Chinioti long chairs set in solid dark Sheesham rosewood. Adorned with magnificent crown carvings and plush golden velvet cushioning.",
+      descriptionUrdu: "ہاتھ سے تراشیدہ چنیوٹی لمبی اور اونچی پشت والی شاہی کرسیاں۔ خالص کالی شیشم کی لکڑی، شاہی تاج کی نقش نگاری اور قیمتی سنہری مخمل کشن کے ساتھ۔",
+      priceEstimate: 135000,
+      image: longChairsShowroomImage,
+      woodType: "100% Pure Seasoned Sheesham (Tali)",
+      carvingStyle: "Mughal High-Crown Relief (Deep Carving)",
+      polishType: "Natural Rosewood Walnut Gloss Polish",
+      features: ["5.5ft Extra Tall High-Back Design", "Authentic Chinioti master craftsmanship", "High-density Master foam velvet cushioning", "Heavy solid Sheesham timber frame"],
+      featuresUrdu: ["ساڑھے ۵ فٹ اونچی پشت والا شاہی ماڈل", "چنیوٹ کے ماہرین کا بہترین شاہکار", "پریمیئم ماسٹر فوم اور گولڈن مخمل", "خالص اور مضبوط کالی شیشم لکڑی"]
     },
     {
       id: "prod-2",
@@ -110,7 +160,7 @@ export default function Catalog({ lang, onSelectProductForQuote, bedImage, sofaI
       description: "An exquisite four-panel wooden partition screen crafted from finest seasoned Sheesham wood. Adorned with delicate floral lattice-work and brass details, this masterpiece serves as a grand divider or an iconic statement piece.",
       descriptionUrdu: "خالص پکی شیشم سے بنے روایتی چار پینل والا آرائشی روم ڈیوائیڈر۔ اس پر چنیوٹ کے نامور کاریگروں کی ہاتھ سے بنائی گئی دلکش جالی دار پتیوں کی باریک نقش و نگار اور پیتل کا نفیس کام موجود ہے۔",
       priceEstimate: 45000,
-      image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop",
+      image: roomDividerImage,
       woodType: "Pure Seasoned Sheesham (Tali)",
       carvingStyle: "Traditional Lattice & Floral Carving",
       polishType: "Antique Matte Walnut Finish",
@@ -208,21 +258,6 @@ export default function Catalog({ lang, onSelectProductForQuote, bedImage, sofaI
       featuresUrdu: ["6 فٹ اونچا خوبصورت کارنر ڈیزائن", "مضبوط گلاس شیلفیں", "لائٹنگ کی سہولت", "دیمک سے محفوظ پکی لکڑی"]
     },
     {
-      id: "prod-5",
-      name: "Heritage Royal 3-Door Wardrobe",
-      nameUrdu: "شاہی تین دروازوں والی الماری",
-      category: "storage",
-      description: "A massive, heirloom-quality bedroom wardrobe featuring heavy double-carved borders, solid brass handle fittings, 3 spacious shelves, and 2 private inner drawers with velvet lining.",
-      descriptionUrdu: "کمرے کی سجاوٹ کے لیے ایک شاندار اور وسیع الماری جس پر ہاتھ کی گہری نقش و نگار ہے۔ اس میں خالص تانبے کے کڑے ہینڈل اور دراز بنے ہوئے ہیں۔",
-      priceEstimate: 135000,
-      image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=600&auto=format&fit=crop",
-      woodType: "Pure Seasoned Sheesham & Oak",
-      carvingStyle: "Traditional Flower Vase Relief Carving",
-      polishType: "Walnut High-Gloss Polish",
-      features: ["3 heavy hinged doors with locks", "Integrated secret drawers", "Anti-humidity seasoned lining", "Brass secure safety locks"],
-      featuresUrdu: ["3 بھاری دروازے مع تالے", "اندرونی خفیہ والٹ درازیں", "نمی سے پاک لکڑی کی لکیریں", "خالص تانبے کی فٹنگز"]
-    },
-    {
       id: "prod-6",
       name: "Sarmast Slatted Accent Chair",
       nameUrdu: "سرمست لکڑی کی منفرد کرسی",
@@ -239,51 +274,7 @@ export default function Catalog({ lang, onSelectProductForQuote, bedImage, sofaI
     },
 
 
-    {
-      id: "prod-10",
-      name: "Asri Wood-Framed Luxury Sofa with Side Shelf",
-      nameUrdu: "عصری لکڑی کا کشن صوفہ سائیڈ شیلف کے ساتھ",
-      category: "masterpieces",
-      description: "A revolutionary sofa design featuring broad curved wooden arms that double as practical side bookshelves or display compartments. Fully upholstered in premium high-density velvet.",
-      descriptionUrdu: "ایک جدید انقلابی صوفہ ڈیزائن جس میں چوڑے، گول اور خم دار بازو بنے ہیں جو سائیڈ شیلف یا کتابیں رکھنے کے کام آتے ہیں۔ اعلی کوالٹی کشن اور مخمل کپڑا اس کی شان بڑھاتا ہے۔",
-      priceEstimate: 85000,
-      image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=600&auto=format&fit=crop",
-      woodType: "Premium Seasoned Sheesham & Pine",
-      carvingStyle: "Curved Seamless Bending Art",
-      polishType: "High-Gloss Dark Rosewood Polish",
-      features: ["Built-in smart armrest bookcase", "High density Master Foam cushions", "Sturdy curved wooden outer frame", "Custom premium fabric colors"],
-      featuresUrdu: ["بازو میں بنی ہوئی خوبصورت اور کارآمد شیلف", "خالص ہائی ڈینسٹی ماسٹر فوم سیٹیں", "مضبوط اور جدید خمدار لکڑی کا فریم", "آپ کی پسند کے کپڑے اور رنگ کی سہولت"]
-    },
-    {
-      id: "prod-11",
-      name: "Mukammal Sanduq Cushion Stool",
-      nameUrdu: "صندوق کشن سٹول مع خفیہ سٹوریج",
-      category: "masterpieces",
-      description: "A hybrid storage box and comfortable cushioned stool. Crafted like a heritage wooden chest with elegant horizontal wood paneling and a soft tufted ivory top seat.",
-      descriptionUrdu: "ایک دلکش اور کثیر المقاصد صندوق سٹول جس کے اوپر نرم مخملی کشن نشست ہے اور اندر قیمتی اشیاء رکھنے کے لئے خفیہ جگہ موجود ہے۔",
-      priceEstimate: 14500,
-      image: "https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=600&auto=format&fit=crop",
-      woodType: "Genuine Seasoned Sheesham",
-      carvingStyle: "Traditional Horizontal Plank Panel",
-      polishType: "Natural Teak Matte Polish",
-      features: ["Soft-closing secure hinge top lid", "Plush high-density ivory foam seating", "Large internal storage compartment", "Scratch-resistant feet"],
-      featuresUrdu: ["سافٹ ہینج کے ساتھ کھلنے والا کشن ڈھکن", "انتہائی نرم اور پائیدار مخمل کی کشن سیٹ", "اندرونی وسیع خفیہ سٹوریج خانہ", "کمرے میں کم جگہ گھیرنے والا سمارٹ سائز"]
-    },
-    {
-      id: "prod-14",
-      name: "Wana Traditional Rope-Woven Stool",
-      nameUrdu: "وانا روایتی بان کی بنائی والا سٹول",
-      category: "masterpieces",
-      description: "A high-legged wooden stool with a thick woven cotton rope (Baari / Sutar) top seat. Reflects the rural warmth of Pakistani culture while preserving minimalist utility.",
-      descriptionUrdu: "خالص لکڑی کے پائے اور روایتی باریک سوتر بان کی مضبوط بنائی والا ایک خوبصورت اونچا سٹول۔ یہ پاکستانی دیہی ثقافت اور سادگی کا ایک حسین عکاس ہے۔",
-      priceEstimate: 6500,
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=600&auto=format&fit=crop",
-      woodType: "Seasoned Sheesham Wood",
-      carvingStyle: "Tapered Turned Legs with Webbing Frame",
-      polishType: "Natural Oak Light Matte Polish",
-      features: ["Genuine hand-woven cotton rope webbing", "Lightweight but incredibly sturdy", "Turned legs with classic details", "Compact for patios and lobbies"],
-      featuresUrdu: ["ہاتھ سے بنے ہوئے سوتر بان کی پائیدار بنائی", "ہلکا پھلکا لیکن انتہائی مضبوط", "خراشیدہ اور روایتی گول پائے", "صحن، ٹیرس یا لابی کے لئے موزوں"]
-    }
+
   ], [bedImage, sofaImage, diningImage]);
 
   // Categories translate

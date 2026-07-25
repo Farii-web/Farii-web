@@ -1,5 +1,5 @@
 {
-  "name": "Al-Haram Furniture Chiniot",
+  "name": "Al Haram Furniture Chiniot",
   "description": "Premium hand-carved solid wood furniture showroom in Chiniot, Pakistan, featuring an interactive quote builder and Gemini AI design assistant.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

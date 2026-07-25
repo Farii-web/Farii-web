@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Trees, Wind, Hammer, Flame, Palette, CheckCircle2 } from 'lucide-react';
+import { Trees, Wind, Hammer, Flame, Palette, CheckCircle2, Sparkles, Wrench } from 'lucide-react';
+import beforeAfterCraftImage from '../assets/images/chiniot_craft_nosheet_split_1784952563441.jpg';
 
 interface AboutProps {
   lang: 'en' | 'ur';
@@ -60,7 +61,7 @@ export default function AboutChiniot({ lang }: AboutProps) {
           </h2>
           <p className="text-wood-dark/80 text-sm sm:text-base leading-relaxed">
             {lang === 'en' 
-              ? 'Chiniot is globally celebrated for hand-carving masterpieces. At Al-Haram Furniture, we preserve this centuries-old manual art form, blending it with modern wood seasoning technology.'
+              ? 'Chiniot is globally celebrated for hand-carving masterpieces. At Al Haram Furniture, we preserve this centuries-old manual art form, blending it with modern wood seasoning technology.'
               : 'چنیوٹ اپنے ہاتھ سے بنے دیدہ زیب فرنیچر کی وجہ سے پوری دنیا میں مانا جاتا ہے۔ الحرم فرنیچر پر ہم چنیوٹ کے اس صدیوں پرانے فن کو جدید سیزننگ ٹیکنالوجی کے ساتھ ملا کر آپ تک پہنچاتے ہیں۔'}
           </p>
         </div>
@@ -134,7 +135,7 @@ export default function AboutChiniot({ lang }: AboutProps) {
                 <CheckCircle2 className="h-5 w-5 text-wood-accent shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-xs sm:text-sm font-semibold text-wood-dark">
-                    {lang === 'en' ? 'Al-Haram Showroom Quality Standard' : 'الحرم فرنیچر کوالٹی گارنٹی'}
+                    {lang === 'en' ? 'Al Haram Furniture Quality Standard' : 'الحرم فرنیچر کوالٹی گارنٹی'}
                   </h4>
                   <p className="text-wood-dark/75 text-xs mt-0.5">
                     {lang === 'en' 
@@ -146,6 +147,69 @@ export default function AboutChiniot({ lang }: AboutProps) {
             </div>
           </div>
 
+        </div>
+
+        {/* Before & After Craftsmanship Feature Card */}
+        <div className="mt-16 bg-white border border-wood-accent/25 rounded-2xl overflow-hidden shadow-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
+            
+            {/* Split Image Side */}
+            <div className="lg:col-span-7 relative group overflow-hidden bg-wood-dark/5">
+              <img 
+                src={beforeAfterCraftImage} 
+                alt="Chiniot Furniture Craftsmanship Before and After" 
+                className="w-full h-80 sm:h-96 object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-xs text-white px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2 border border-white/20">
+                <Wrench className="h-3.5 w-3.5 text-amber-400" />
+                <span>{lang === 'en' ? 'Left: Raw Hand Carving' : 'بائیں: ہاتھ سے خام تراش'}</span>
+              </div>
+              <div className="absolute bottom-4 right-4 bg-wood-accent/90 backdrop-blur-xs text-white px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2 border border-amber-300/30">
+                <Sparkles className="h-3.5 w-3.5 text-amber-200" />
+                <span>{lang === 'en' ? 'Right: Ready Polish Masterpiece' : 'دائیں: مکمل تیار اینٹیک پالش'}</span>
+              </div>
+            </div>
+
+            {/* Explanatory Text Side */}
+            <div className="lg:col-span-5 p-8 lg:p-10 space-y-5 bg-gradient-to-br from-white to-wood-cream/50">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-wood-accent/10 border border-wood-accent/20 text-wood-accent text-xs font-semibold">
+                <Hammer className="h-3.5 w-3.5" />
+                <span>{lang === 'en' ? 'Craftsmanship Journey' : 'پہلے تراش - پھر تیار شاہکار'}</span>
+              </div>
+
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-wood-dark leading-snug">
+                {lang === 'en' 
+                  ? 'From Raw Sheesham Wood to Royal Finished Furniture' 
+                  : 'خام لکڑی کی تراش کاری سے مکمل تیار فرنیچر تک کا منظر'}
+              </h3>
+
+              <p className="text-wood-dark/80 text-sm sm:text-base leading-relaxed urdu-text">
+                {lang === 'en'
+                  ? 'In this split view, see how our experienced Chinioti artisans first carve intricate designs into raw seasoned Sheesham wood using hand chisels, and how it transforms into the final gold-leaf polished masterpiece.'
+                  : 'اس تصویر میں آپ ایک ساتھ دیکھ سکتے ہیں کہ کس طرح ہمارے ماہر چنیوٹی کاریگر پہلے خالص خام شیشم پر چھینی سے نقش و نگار بناتے ہیں اور پھر وہ پالش اور کشننگ کے بعد کتنا شاندار اور دلکش نظر آتا ہے۔'}
+              </p>
+
+              <div className="grid grid-cols-2 gap-4 pt-2 border-t border-wood-accent/15">
+                <div className="p-3 rounded-lg bg-wood-cream/80 border border-wood-accent/10">
+                  <span className="block text-xs font-bold text-wood-accent uppercase font-mono">
+                    {lang === 'en' ? 'Phase 1: Raw Carving' : 'پہلا مرحلہ: خام نقش'}
+                  </span>
+                  <p className="text-xs text-wood-dark/80 mt-1">
+                    {lang === 'en' ? 'Pure hand chisel & hammer' : 'خالص دستی چھینی سے تراش'}
+                  </p>
+                </div>
+                <div className="p-3 rounded-lg bg-wood-cream/80 border border-wood-accent/10">
+                  <span className="block text-xs font-bold text-wood-accent uppercase font-mono">
+                    {lang === 'en' ? 'Phase 2: Royal Finish' : 'دوسرا مرحلہ: تیار شدہ'}
+                  </span>
+                  <p className="text-xs text-wood-dark/80 mt-1">
+                    {lang === 'en' ? 'Gold leaf & velvet cushion' : 'اینٹیک گولڈ اور مخمل کشن'}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
