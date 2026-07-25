@@ -170,15 +170,6 @@ export default function Header({ lang, setLang, activeSection }: HeaderProps) {
                 />
               </div>
 
-              {/* Speech Text - Elegant Guide Badge */}
-              <div className="flex flex-col text-right pr-0.5">
-                <span className="text-xs sm:text-sm md:text-base font-bold text-amber-100 leading-tight drop-shadow-xs flex items-center">
-                  <span className="bg-amber-400/15 px-2.5 py-1 rounded-lg border border-amber-400/30 urdu-text">
-                    انگلش یا اردو میں پڑھ سکتے ہیں
-                  </span>
-                </span>
-              </div>
-
               {/* Language Switch Capsule Button */}
               <button
                 id="lang-toggle-btn"
@@ -232,11 +223,6 @@ export default function Header({ lang, setLang, activeSection }: HeaderProps) {
                 alt="Guide Mascot" 
                 className="h-12 w-12 rounded-full object-cover border-2 border-amber-300 shadow-md shrink-0 animate-bounce"
               />
-              <div className="flex flex-col text-right">
-                <span className="text-base sm:text-lg font-black text-amber-100 leading-tight urdu-text">
-                  انگلش یا اردو میں پڑھ سکتے ہیں
-                </span>
-              </div>
             </div>
             <button className="px-3 py-1.5 rounded-lg bg-amber-400 text-amber-950 font-black text-xs shrink-0 flex items-center gap-1 shadow-md">
               <Globe className="h-4 w-4" />
